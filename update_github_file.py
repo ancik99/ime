@@ -15,7 +15,7 @@ GITHUB_TOKEN = os.getenv('GITHUB_PAT')  # Ambil dari environment variable
 SOURCE_URL   = "https://raw.githubusercontent.com/ancik99/bolodewe/refs/heads/main/bossigit"
 
 # REPO tujuan (Format: "username/repository")
-DEST_REPO    = "ancik99/prila"
+DEST_REPO    = "ancik99/ime"
 GIT_BRANCH   = "main"
 COMMIT_MSG   = "Auto update: Sync playlist from source + footer update"
 SLEEP_BETWEEN_COMMITS_SEC = 0.7
@@ -306,7 +306,7 @@ def main():
         force_expired = None  # auto per-file
 
     # Proses semua file target
-    target_files = generate_target_files(month_name="MEI", year=2026, prefix="DT")
+    target_files = generate_target_files(month_name="APRIL", year=2026, prefix="KL")
     print(f"\n📁 Daftar file target ({len(target_files)}):")
     print(target_files)
 
